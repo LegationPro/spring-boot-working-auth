@@ -1,0 +1,12 @@
+version: '3.1'
+
+services:
+
+  db:
+    image: postgres
+    restart: always
+    environment:
+      POSTGRES_PASSWORD: fatballs123
+      POSTGRES_DB: backend-db
+    ports:
+      - 5432:5432
